@@ -1,7 +1,7 @@
 import "./App.css";
 import React from "react";
 import Titles from "./components/Titles";
-import Choices from "./components/Choices";
+import Choices from "./components/ExpenseForm";
 import Table from "./components/Table";
 
 function App() {

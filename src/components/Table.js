@@ -1,22 +1,26 @@
 import React from "react";
 
-function Table() {
+function Table({ expenses }) {
   return (
     <div>
-      <div class="table_Container">
-        <table border="1" class="table">
-          <tbody class="adjustCells">
+      <div className="table_Container">
+        <table border="1" className="table">
+          <tbody className="adjustCells">
             <tr>
-              <td class="col-type">type</td>
-              <td class="col-name">name</td>
-              <td class="col-date">date</td>
-              <td class="col-amount">amount</td>
+              <td className="col-type">type</td>
+              <td className="col-name">name</td>
+              <td className="col-date">date</td>
+              <td className="col-amount">amount</td>
             </tr>
+            {expenses.map((expense, index) => (
+              <tr key={index}>
+                <td>{expense.value1}</td>
+                <td>{expense.value2}</td>
+                <td>{expense.value3}</td>
+                <td>{expense.value4}</td>
+              </tr>
+            ))}
           </tbody>
-
-          <tr id="tablePlaceholder" class="tablePlaceholder">
-            <td colspan="4">Your added items will show up here!</td>
-          </tr>
         </table>
       </div>
     </div>
