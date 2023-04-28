@@ -1,84 +1,79 @@
 import React, { useState } from "react";
 
-function AddExpenseBtn() {
+function ExpenseForm({ onAddExpense }) {
+  const [expenseInput, setExpenseInput] = useState({
+    type: "Card",
+    name: "",
+    date: "",
+    amount: "",
+  });
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setExpenseInput((prevState) => ({ ...prevState, [name]: value }));
   };
 
-  const handleAddExpense = () => {
-    props.addExpense(expenseInput);
-    // Reset the input fields after submitting
-    setExpenseInput({ value1: "", value2: "", value3: "", value4: "" });
+  const handleAddExpense = (event) => {
+    event.preventDefault();
+    onAddExpense(expenseInput);
+    setExpenseInput({ type: "Card", name: "", date: "", amount: "" });
   };
 
-  function ExpenseForm({ onAddExpense }) {
-    const handleAddExpense = () => {
-      onAddExpense(expenseInput);
-      setExpenseInput({ value1: "", value2: "", value3: "", value4: "" });
-    };
-    const [expenseInput, setExpenseInput] = useState({
-      value1: "",
-      value2: "",
-      value3: "",
-      value4: "",
-    });
-  }
-
-  //debugger;
   return (
     <div>
-      <div className="choices">
-        <label htmlFor="currencyType">Type:</label>
-        <select
-          name="value1"
-          id="currencyType"
-          value={expenseInput.value1}
-          onChange={handleInputChange}
-          className="selectTag"
-        >
-          <option value="Card">Card</option>
-          <option value="Cash">Cash</option>
-          <option value="Crypto">Crypto</option>
-          <option value="Other">Other</option>
-        </select>
-        <label htmlFor="name">Name:</label>
-        <input
-          type="label"
-          name="value2"
-          id="name"
-          placeholder="What did you spend it on?"
-          value={expenseInput.value2}
-          onChange={handleInputChange}
-        />
-      </div>
+      <form onSubmit={handleAddExpense}>
+        <div className="choices">
+          <label htmlFor="currencyType">Type:</label>
+          <select
+            name="type"
+            id="currencyType"
+            value={expenseInput.type}
+            onChange={handleInputChange}
+            className="selectTag"
+          >
+            <option value="Card">Card</option>
+            <option value="Cash">Cash</option>
+            <option value="Crypto">Crypto</option>
+            <option value="Other">Other</option>
+          </select>
+          <label htmlFor="name">Name:</label>
+          <input
+            type="label"
+            name="name"
+            id="name"
+            placeholder="What did you spend it on?"
+            value={expenseInput.name}
+            onChange={handleInputChange}
+          />
+        </div>
 
-      <div className="choices">
-        <label htmlFor="date">Date:</label>
-        <input
-          type="date"
-          name="value3"
-          id="date"
-          className="selectDate"
-          value={expenseInput.value3}
-          onChange={handleInputChange}
-        />
-        <label htmlFor="amount">Amount:</label>
-        <input
-          type="label"
-          name="value4"
-          id="amount"
-          placeholder="How much?"
-          value={expenseInput.value4}
-          onChange={handleInputChange}
-        />
-      </div>
+        <div className="choices">
+          <label htmlFor="date">Date:</label>
+          <input
+            type="date"
+            name="date"
+            id="date"
+            className="selectDate"
+            value={expenseInput.date}
+            onChange={handleInputChange}
+          />
+          <label htmlFor="amount">Amount:</label>
+          <input
+            type="label"
+            name="amount"
+            id="amount"
+            placeholder="How much?"
+            value={expenseInput.amount}
+            onChange={handleInputChange}
+          />
+        </div>
 
-      <button className="button" onClick={handleAddExpense}>
-        Add a new expense
-      </button>
+        <button className="button" type="submit">
+          Add a new expense
+        </button>
+      </form>
     </div>
   );
 }
 
-export default AddExpenseBtn;
+export default ExpenseForm;

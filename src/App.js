@@ -1,15 +1,13 @@
 import "./App.css";
 import React from "react";
 import Titles from "./components/Titles";
-import Choices from "./components/ExpenseForm";
-import Table from "./components/Table";
+import ExpenseTracker from "./components/ExpenseTracker";
 
 function App() {
   return (
     <div>
       <Titles />
-      <Choices />
-      <Table />
+      <ExpenseTracker />
     </div>
   );
 }

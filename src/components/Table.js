@@ -1,5 +1,4 @@
 import React from "react";
-
 function Table({ expenses }) {
   return (
     <div>
@@ -14,10 +13,10 @@ function Table({ expenses }) {
             </tr>
             {expenses.map((expense, index) => (
               <tr key={index}>
-                <td>{expense.value1}</td>
-                <td>{expense.value2}</td>
-                <td>{expense.value3}</td>
-                <td>{expense.value4}</td>
+                <td>{expense.type}</td>
+                <td>{expense.name}</td>
+                <td>{expense.date}</td>
+                <td>{expense.amount}</td>
               </tr>
             ))}
           </tbody>

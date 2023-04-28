@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ExpenseForm from "./ExpenseForm";
 import Table from "./Table";
-
+//debugger;
 function ExpenseTracker() {
   const [expenses, setExpenses] = useState([]);
 
