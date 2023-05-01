@@ -22,14 +22,14 @@ function ExpenseForm({ onAddExpense }) {
   return (
     <div>
       <form onSubmit={handleAddExpense}>
-        <div className="choices">
+        <div className="pt-4 pb-4">
           <label htmlFor="currencyType">Type:</label>
           <select
             name="type"
             id="currencyType"
             value={expenseInput.type}
             onChange={handleInputChange}
-            className="selectTag"
+            className="mr-3"
           >
             <option value="Card">Card</option>
             <option value="Cash">Cash</option>
@@ -47,13 +47,13 @@ function ExpenseForm({ onAddExpense }) {
           />
         </div>
 
-        <div className="choices">
+        <div className="pt-4 pb-4">
           <label htmlFor="date">Date:</label>
           <input
             type="date"
             name="date"
             id="date"
-            className="selectDate"
+            className="mr-3"
             value={expenseInput.date}
             onChange={handleInputChange}
           />
