@@ -1,16 +1,11 @@
-import React, { useState } from "react";
-import ExpenseForm from "./ExpenseForm";
+import React from "react";
 
-function DeleteRow({ DltRow }) {
-  const [expenseLists, setExpenseList] = useState([]);
-
-  const RemoveRow = (index) => {
-    setExpenseList(
-      expenseLists.filter((expenseList) => expenseList.index !== index)
-    );
+function DeleteRow({ index, DltRow }) {
+  const handleRemoveRow = () => {
+    DltRow(index);
   };
 
-  return <RemoveRow DltRow={RemoveRow} />;
+  return <button onClick={handleRemoveRow}>Remove</button>;
 }
 
 export default DeleteRow;

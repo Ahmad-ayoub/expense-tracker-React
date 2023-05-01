@@ -1,5 +1,5 @@
 import React from "react";
-function Table({ expenses }) {
+function Table({ expenses, onDeleteExpense }) {
   return (
     <div>
       <div className="table_Container">
@@ -17,6 +17,9 @@ function Table({ expenses }) {
                 <td>{expense.name}</td>
                 <td>{expense.date}</td>
                 <td>{expense.amount}</td>
+                <td>
+                  <button onClick={() => onDeleteExpense(index)}>Remove</button>
+                </td>
               </tr>
             ))}
           </tbody>
