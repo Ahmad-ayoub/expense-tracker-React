@@ -2,14 +2,14 @@ import React from "react";
 function Table({ expenses, onDeleteExpense }) {
   return (
     <div>
-      <div className="table_Container">
+      <div className="d-flex justify-content-center pt-5 w-100">
         <table border="1" className="table">
-          <tbody className="adjustCells">
+          <tbody>
             <tr>
-              <td className="col-type">type</td>
-              <td className="col-name">name</td>
-              <td className="col-date">date</td>
-              <td className="col-amount">amount</td>
+              <td className="col-1">type</td>
+              <td className="col-6">name</td>
+              <td>date</td>
+              <td>amount</td>
             </tr>
             {expenses.map((expense, index) => (
               <tr key={index}>
