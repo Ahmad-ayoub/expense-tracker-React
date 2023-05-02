@@ -36,4 +36,4 @@ In addition to React and CSS, this Expense Tracker app also utilizes the Bootstr
 The app's core functionality revolves around obtaining user inputs, storing them in state using useState, and dynamically generating table rows to showcase the added expenses in a well-ordered manner. The code comprises a combination of state hooks and functions that handle data extraction, table updates, and other crucial tasks.
 
 ##Author
-Ahmad Ayoub - FullStack Developer - My LinkedIn
+Ahmad Ayoub - FullStack Developer - [My LinkedIn](https://www.linkedin.com/in/ahmad-ayoub/)
