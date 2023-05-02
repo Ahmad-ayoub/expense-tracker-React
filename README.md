@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+##React Expense Tracker
+Introducing a straightforward React Expense Tracker app that enables users to add and manage their expenses efficiently and systematically. This app is built using the React framework, which makes use of components and React hooks, such as useState, for efficient state management and modular code.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Featuring an intuitive interface, users can enter the expense category, description, date, and amount, followed by clicking the "Add a new expense" button to incorporate it into the table.
+Each row includes a dedicated "delete" button, allowing for the selective removal of any row as needed.
+The table presents all recorded expenses in a tidy and well-organized layout, offering users a convenient way to monitor their spending.
 
-## Available Scripts
+Access the app [here](https://ahmad-ayoub.github.io/expense-tracker-React/)
 
-In the project directory, you can run:
+![react app screenshot](https://user-images.githubusercontent.com/107888495/235596338-da360e69-29ba-401e-bcfc-910964bfc3bd.png)
 
-### `npm start`
+After entering the necessary information, simply click the "Add a New Expense" button, and the placeholder will be replaced with a new row containing the user's input, as illustrated below.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+https://user-images.githubusercontent.com/107888495/235595797-10018059-95c9-4502-94c9-779c7a2ffdd0.mp4
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+You can add any number of rows with expense details as well.
 
-### `npm test`
+https://user-images.githubusercontent.com/107888495/235595907-1bef2bac-ed63-4925-b2a9-4fd4429116b2.mp4
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To delete a single row, click the "Delete" button to remove the desired row.
 
-### `npm run build`
+https://user-images.githubusercontent.com/107888495/235596599-77b80d92-276d-41a7-aa58-369ff159f910.mp4
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This app marks my fourth JavaScript project to date, with a focus on React.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+React components: The app is built using a modular structure, consisting of various functional components for handling different aspects of the application, such as input fields, buttons, and the expense table. Each component is reusable and can be easily integrated into the app to improve maintainability and readability.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+React hooks: The useState hook is employed for efficient state management within functional components. By using useState, the app can easily track the state of user inputs, expenses, and table updates. This makes it easier to manage state changes and trigger updates in response to user actions.
 
-### `npm run eject`
+CSS styling: The app's visual design is managed by CSS, encompassing styles for layout, colors, and fonts. The table container and other components feature relevant classes that define their display, alignment, background color, width, and positioning.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+React functionality: The app leverages React to manage user interactions, such as adding expenses to the table and processing input data. It employs the virtual DOM to create, update, and display expense information based on user input.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+In addition to React and CSS, this Expense Tracker app also utilizes the Bootstrap framework for a responsive and modern design. Bootstrap's pre-built components and grid system make it easy to create a consistent and aesthetically pleasing layout across various devices. By integrating Bootstrap, the app ensures a seamless user experience with enhanced UI components, ensuring optimal functionality and a polished appearance.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The app's core functionality revolves around obtaining user inputs, storing them in state using useState, and dynamically generating table rows to showcase the added expenses in a well-ordered manner. The code comprises a combination of state hooks and functions that handle data extraction, table updates, and other crucial tasks.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##Author
+Ahmad Ayoub - FullStack Developer - My LinkedIn
