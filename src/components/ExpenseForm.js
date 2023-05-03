@@ -29,14 +29,16 @@ function ExpenseForm({ onAddExpense }) {
             id="currencyType"
             value={expenseInput.type}
             onChange={handleInputChange}
-            className="mr-3"
+            className="m-3"
           >
             <option value="Card">Card</option>
             <option value="Cash">Cash</option>
             <option value="Crypto">Crypto</option>
             <option value="Other">Other</option>
           </select>
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="name" className="m-3">
+            Name:
+          </label>
           <input
             type="label"
             name="name"
@@ -53,11 +55,13 @@ function ExpenseForm({ onAddExpense }) {
             type="date"
             name="date"
             id="date"
-            className="mr-3"
+            className="m-3"
             value={expenseInput.date}
             onChange={handleInputChange}
           />
-          <label htmlFor="amount">Amount:</label>
+          <label htmlFor="amount" className="m-3">
+            Amount:
+          </label>
           <input
             type="label"
             name="amount"
