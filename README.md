@@ -5,7 +5,7 @@ Featuring an intuitive interface, users can enter the expense category, descript
 Each row includes a dedicated "delete" button, allowing for the selective removal of any row as needed.
 The table presents all recorded expenses in a tidy and well-organized layout, offering users a convenient way to monitor their spending.
 
-Access the app [here](https://ahmad-ayoub.github.io/expense-tracker-React/)
+Access the app [here](https://whispering-fjord-41748.herokuapp.com/) utilizing Heroku. Heroku is a cloud platform that allows developers to easily deploy, manage, and scale their applications
 
 ![react app screenshot](https://user-images.githubusercontent.com/107888495/235596338-da360e69-29ba-401e-bcfc-910964bfc3bd.png)
 
