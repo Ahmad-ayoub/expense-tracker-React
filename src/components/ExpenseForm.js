@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 
 function ExpenseForm({ onAddExpense }) {
-  const [expenseInput, setExpenseInput] = useState({
+  const defaultExpense = {
     type: "Card",
     name: "",
     date: "",
     amount: "",
-  });
+  };
+
+  const [expenseInput, setExpenseInput] = useState(defaultExpense);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -16,7 +18,7 @@ function ExpenseForm({ onAddExpense }) {
   const handleAddExpense = (event) => {
     event.preventDefault();
     onAddExpense(expenseInput);
-    setExpenseInput({ type: "Card", name: "", date: "", amount: "" });
+    setExpenseInput(defaultExpense);
   };
 
   return (

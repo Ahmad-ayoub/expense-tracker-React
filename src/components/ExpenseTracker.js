@@ -4,8 +4,9 @@ import Table from "./Table";
 function ExpenseTracker({}) {
   const [expenses, setExpenses] = useState([]);
 
-  const handleAddExpense = (expense) => {
-    setExpenses([...expenses, expense]);
+  const onAddExpense = (expense) => {
+    const updatedExpenses = [...expenses, expense];
+    setExpenses(updatedExpenses);
   };
 
   const handleDeleteExpense = (index) => {
@@ -15,7 +16,7 @@ function ExpenseTracker({}) {
 
   return (
     <div>
-      <ExpenseForm onAddExpense={handleAddExpense} />
+      <ExpenseForm onAddExpense={onAddExpense} />
       <Table expenses={expenses} onDeleteExpense={handleDeleteExpense} />
     </div>
   );
