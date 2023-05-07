@@ -1,9 +1,13 @@
-##React Expense Tracker
-Introducing a straightforward React Expense Tracker app that enables users to add and manage their expenses efficiently and systematically. This app is built using the React framework, which makes use of components and React hooks, such as useState, for efficient state management and modular code.
+#React Expense Tracker
+Introducing a user-friendly React Expense Tracker app for efficient expense management:
 
-Featuring an intuitive interface, users can enter the expense category, description, date, and amount, followed by clicking the "Add a new expense" button to incorporate it into the table.
-Each row includes a dedicated "delete" button, allowing for the selective removal of any row as needed.
-The table presents all recorded expenses in a tidy and well-organized layout, offering users a convenient way to monitor their spending.
+##Built with the React framework
+*Utilizes components and React hooks like useState, promoting efficient state management and modular code
+##Intuitive interface
+*Add expense details: category, description, date, and amount
+*Click "Add a new expense" to incorporate the information into the table
+*Dedicated "delete" button for each row allows selective removal
+*Organized layout for convenient monitoring of spending
 
 Access the app [here](https://whispering-fjord-41748.herokuapp.com/) utilizing Heroku. Heroku is a cloud platform that allows developers to easily deploy, manage, and scale their applications
 
@@ -21,19 +25,29 @@ To delete a single row, click the "Delete" button to remove the desired row.
 
 https://user-images.githubusercontent.com/107888495/235596599-77b80d92-276d-41a7-aa58-369ff159f910.mp4
 
-This app marks my fourth JavaScript project to date, with a focus on React.
+This app is my very first React based project.
 
-React components: The app is built using a modular structure, consisting of various functional components for handling different aspects of the application, such as input fields, buttons, and the expense table. Each component is reusable and can be easily integrated into the app to improve maintainability and readability.
+#Key features
 
-React hooks: The useState hook is employed for efficient state management within functional components. By using useState, the app can easily track the state of user inputs, expenses, and table updates. This makes it easier to manage state changes and trigger updates in response to user actions.
+##Modular structure with reusable components
+*Functional components handle different aspects, such as input fields, buttons, and the expense table
+*Improves maintainability and readability
 
-CSS styling: The app's visual design is managed by CSS, encompassing styles for layout, colors, and fonts. The table container and other components feature relevant classes that define their display, alignment, background color, width, and positioning.
+##useState hook for efficient state management
+*Tracks the state of user inputs, expenses, and table updates
+*Simplifies state changes and triggers updates based on user actions
 
-React functionality: The app leverages React to manage user interactions, such as adding expenses to the table and processing input data. It employs the virtual DOM to create, update, and display expense information based on user input.
+##CSS styling for visual design
+*Styles for layout, colors, and fonts
+*Table container and components feature relevant classes for display, alignment, and positioning
 
-In addition to React and CSS, this Expense Tracker app also utilizes the Bootstrap framework for a responsive and modern design. Bootstrap's pre-built components and grid system make it easy to create a consistent and aesthetically pleasing layout across various devices. By integrating Bootstrap, the app ensures a seamless user experience with enhanced UI components, ensuring optimal functionality and a polished appearance.
+##React functionality for user interactions
+*Manages adding expenses to the table and processing input data
+*Employs the virtual DOM to create, update, and display expense information based on user input
 
-The app's core functionality revolves around obtaining user inputs, storing them in state using useState, and dynamically generating table rows to showcase the added expenses in a well-ordered manner. The code comprises a combination of state hooks and functions that handle data extraction, table updates, and other crucial tasks.
+##Bootstrap framework for responsive design
+*Pre-built components and grid system ensure consistent and aesthetically pleasing layout across devices
+*Seamless user experience with enhanced UI components for optimal functionality and appearance
 
 ##Author
 Ahmad Ayoub - FullStack Developer - [My LinkedIn](https://www.linkedin.com/in/ahmad-ayoub/)
