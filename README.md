@@ -1,13 +1,18 @@
-#React Expense Tracker
+# React Expense Tracker
 Introducing a user-friendly React Expense Tracker app for efficient expense management:
 
-##Built with the React framework
-*Utilizes components and React hooks like useState, promoting efficient state management and modular code
+## Built with the React framework
+
+* Utilizes components and React hooks like useState, promoting efficient state management and modular code
 ##Intuitive interface
-*Add expense details: category, description, date, and amount
-*Click "Add a new expense" to incorporate the information into the table
-*Dedicated "delete" button for each row allows selective removal
-*Organized layout for convenient monitoring of spending
+
+* Add expense details: category, description, date, and amount
+ 
+* Click "Add a new expense" to incorporate the information into the table
+
+* Dedicated "delete" button for each row allows selective removal
+
+* Organized layout for convenient monitoring of spending
 
 Access the app [here](https://whispering-fjord-41748.herokuapp.com/) utilizing Heroku. Heroku is a cloud platform that allows developers to easily deploy, manage, and scale their applications
 
@@ -27,27 +32,36 @@ https://user-images.githubusercontent.com/107888495/235596599-77b80d92-276d-41a7
 
 This app is my very first React based project.
 
-#Key features
+# Key features
 
-##Modular structure with reusable components
-*Functional components handle different aspects, such as input fields, buttons, and the expense table
-*Improves maintainability and readability
+## Modular structure with reusable components
 
-##useState hook for efficient state management
-*Tracks the state of user inputs, expenses, and table updates
-*Simplifies state changes and triggers updates based on user actions
+* Functional components handle different aspects, such as input fields, buttons, and the expense table
 
-##CSS styling for visual design
-*Styles for layout, colors, and fonts
-*Table container and components feature relevant classes for display, alignment, and positioning
+* Improves maintainability and readability
 
-##React functionality for user interactions
-*Manages adding expenses to the table and processing input data
-*Employs the virtual DOM to create, update, and display expense information based on user input
+## useState hook for efficient state management
 
-##Bootstrap framework for responsive design
-*Pre-built components and grid system ensure consistent and aesthetically pleasing layout across devices
-*Seamless user experience with enhanced UI components for optimal functionality and appearance
+* Tracks the state of user inputs, expenses, and table updates
 
-##Author
+* Simplifies state changes and triggers updates based on user actions
+
+## CSS styling for visual design
+
+* Styles for layout, colors, and fonts
+
+* Table container and components feature relevant classes for display, alignment, and positioning
+
+## React functionality for user interactions
+
+* Manages adding expenses to the table and processing input data
+
+* Employs the virtual DOM to create, update, and display expense information based on user input
+
+## Bootstrap framework for responsive design
+* Pre-built components and grid system ensure consistent and aesthetically pleasing layout across devices
+
+* Seamless user experience with enhanced UI components for optimal functionality and appearance
+
+## Author
 Ahmad Ayoub - FullStack Developer - [My LinkedIn](https://www.linkedin.com/in/ahmad-ayoub/)
