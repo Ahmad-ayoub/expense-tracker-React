@@ -14,7 +14,7 @@ Introducing a user-friendly React Expense Tracker app for efficient expense mana
 
 * Organized layout for convenient monitoring of spending
 
-Access the app [here](https://whispering-fjord-41748.herokuapp.com/) utilizing Heroku. Heroku is a cloud platform that allows developers to easily deploy, manage, and scale their applications
+Access the app [here](https://gentle-thicket-72795.herokuapp.com/) utilizing Heroku. Heroku is a cloud platform that allows developers to easily deploy, manage, and scale their applications
 
 ![react app screenshot](https://user-images.githubusercontent.com/107888495/235596338-da360e69-29ba-401e-bcfc-910964bfc3bd.png)
 
